@@ -1,0 +1,94 @@
+h1 {
+background-color:#0abab5;
+color:#ffffff;
+border: 3px solid #078884;
+text-align: center;
+width: 1000px;
+font-size: 50px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 25px;
+width: 850px;
+color: Black;
+position: absolute;
+left: 75px;
+}
+
+label {
+color: Black;
+font-weight: bold;
+display: block;
+width: 100px;
+float: left;
+font-size: 17px;
+font-family: Arial, Helvetica, sans-serif;
+position: absolute;
+left: 250px;
+
+}
+
+.usernameText {
+width: 350px;
+height: 20px;
+position: absolute;
+left: 350px;
+}
+
+.commentText {
+width: 350px;
+height: 75px;
+position: absolute;
+left: 350px;
+}
+
+.button {
+padding:5px 15px; 
+background: white; 
+border:1px solid #078884;;
+cursor:pointer;
+-webkit-border-radius: 5px;
+border-radius: 5px; 
+text-align: center;
+width: 358px;
+font-size: 15px;
+font-family: Arial, Helvetica, sans-serif;
+position: absolute;
+left: 350px;
+}
+
+.button:hover {
+background-color: #0abab5;
+color: white;
+}
+
+.comment {
+height: 100px;
+margin:auto;
+width: 30%;
+box-sizing: border-box;
+}
+
+#user {
+width: 150px;
+border:1px solid #0abab5;
+color: #078884;
+font-weight: bold;
+}
+
+#text {
+width: 850px;
+border:1px solid #0abab5;
+color: black;
+}
+
+#main-box {
+display: flex;
+min-width: 1000px;
+max-width: 1000px;
+font-family: Arial, Helvetica, sans-serif;
+border:1px solid #0abab5;
+border-radius: 5px; 
+}

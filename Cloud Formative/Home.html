@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+<title>Formative 2</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+<header class="header">
+<h1>Cloud Computing Formative 2</h1>
+</header>
+<form>
+	<p id="eMess">Please enter your username and comment for the message board below</p><br><br><br><br><br>
+ 	<label for="username">Username:</label>
+	<input id="username" type="text" class="usernameText" /><br><br>
+ 	<label for="comment">Comment:</label>
+	<input id="comment" type="text" class="commentText" /><br><br><br><br><br>
+ 	<button class="button" type="button" value="Submit" onclick=updateBox()>Submit</button>
+</form>
+
+<br><br><br><br>
+
+<script>
+	function updateBox() {
+		const uname = document.getElementById("username").value;
+		const message = document.getElementById("comment").value;
+		if(uname == "" || message == "") {
+			document.getElementById("eMess").innerHTML = "Submission Invalid. Please enter both username and comment.";
+		}
+		else {
+			var table = document.getElementById("main-box");
+			var row = table.insertRow();
+			var cell1 = row.insertCell(0)
+			var cell2 = row.insertCell(1);
+			cell1.id = "text";
+			cell2.id = "text";
+			cell1.innerHTML = uname;
+			cell2.innerHTML = message;
+		}
+	}
+</script>
+
+<table id="main-box">
+	<tr id="main-row">
+		<th id="user" class="comment">Username</th>
+		<th id="text" class="comment">Comment</th>
+</table>
+</body>
+</html>
+

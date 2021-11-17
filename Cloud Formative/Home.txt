@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formative 2</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+<header class="header">
+<h1>Cloud Computing Formative 2</h1>
+</header>
+
+<form action="/submit_comment.php">
+	<p>Please enter your username and comment for the message board below</p><br><br><br><br><br>
+ 	<label for="username">Username:</label>
+	<input type="text" class="usernameText" /><br><br>
+ 	<label for="comment">Comment:</label>
+	<input type="text" class="commentText" /><br><br><br><br><br>
+ 	<input type="submit" value="Submit">
+</form>
+
+<br><br><br><br>
+
+<div id="main-box">
+  <div id="user" class="comment">Example Username</div>
+  <div id="text" class="comment">Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text</div>
+</div>
+
+</body>
+</html>
+
